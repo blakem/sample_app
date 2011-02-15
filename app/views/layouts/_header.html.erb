@@ -5,6 +5,7 @@
       <li><%= link_to "Home", root_path %></lil>
 		<% if signed_in? %>
 	    <li><%= link_to "Profile", current_user %></lil>
+	    <li><%= link_to "Settings", edit_user_path(current_user) %></lil>
 		<% end %>	
 	    <li><%= link_to "Help", help_path %></lil>
 		<% if signed_in? %>
