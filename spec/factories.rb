@@ -8,3 +8,8 @@ end
 Factory.sequence :email do |n|
   "personf-#{n+1}@example.com"
 end
+
+Factory.define :micropost do |micropost|
+  micropost.content "foobar"
+  micropost.association :user
+end
